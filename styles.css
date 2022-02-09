@@ -1,6 +1,15 @@
+/* Header */
+header {
+    text-align: left;
+}
 
+/* Footer */
+footer {
+    text-align: center;
+    color: gray
+}
 
-/* CSS Code To Test This File */
+/* To Confirm CSS To HTML Linkage */
 .test-css-file-01 {
     color: orange;
     background-color: black;
