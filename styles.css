@@ -3,6 +3,15 @@ header {
     text-align: left;
 }
 
+
+paragraph {
+    text-align: center;
+    color: white;
+
+}
+
+
+
 /* Footer */
 footer {
     text-align: center;
