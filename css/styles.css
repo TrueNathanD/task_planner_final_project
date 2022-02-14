@@ -1,0 +1,77 @@
+/* Header */
+h1 {
+    text-align: left;
+    color: white;
+    background-color: blue;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Nav Bar */
+.nav a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav {
+    padding-top: 24px;
+    padding-right: 24px;
+}
+
+.nav a:hover {
+    color: gold;    
+}
+
+/* Container */
+.container {
+    border: 12px solid;
+    border-color: purple;
+}
+
+/* Accordion Dropdown Menu */
+.accordion-button {
+    color: red;
+    background-color: magenta;
+    font-weight: bold;
+}
+
+.accordion {
+    color: black;
+    font-weight: bold;
+}
+
+.accordion-item {
+    background-color: green;
+}
+
+/* Input Form */
+.form-task {
+    background-color: orange;
+}
+
+/* Card Appearance */
+.card {
+    color: pink;
+    background-color: black;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: gray
+}
+
+/* To Confirm CSS To HTML Linkage */
+.test-css-file-01 {
+    color: orange;
+    background-color: black;
+    text-align: center;
+}
