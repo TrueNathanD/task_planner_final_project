@@ -1,13 +1,19 @@
-/* Header */
-h1 {
-    text-align: left;
-    color: white;
-    background-color: blue;
-    font-size: 32px;
-    font-weight: bold;
+html {
+    background-color: rgb(246, 246, 120);
 }
 
-/* Nav Bar */
+body {
+    background-color: rgb(116, 239, 116);
+}
+
+h1 {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    background-color: rgb(252, 166, 105);
+    font-size: 32px;
+    font-weight: italic;
+}
+
 .nav a {
     text-transform: uppercase;
     font-size: 14px;
@@ -29,13 +35,11 @@ h1 {
     color: gold;    
 }
 
-/* Container */
 .container-fluid {
     border: 12px solid;
     border-color: purple;
 }
 
-/* Accordion Dropdown Menu */
 .accordion-button {
     color: red;
     background-color: magenta;
@@ -52,12 +56,10 @@ h1 {
     background-color: green;
 }
 
-/* Input Form */
 .form-task {
     background-color: orange;
 }
 
-/* Card Appearance */
 .card {
     color: pink;
     background-color: black;
@@ -71,15 +73,7 @@ h1 {
     background-color: green;
 }
 
-/* Footer */
 footer {
     text-align: center;
     color: gray
-}
-
-/* To Confirm CSS To HTML Linkage */
-.test-css-file-01 {
-    color: orange;
-    background-color: black;
-    text-align: center;
 }
