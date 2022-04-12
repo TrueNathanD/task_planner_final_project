@@ -1,82 +1,110 @@
-html {
-    background-color: rgb(246, 246, 120);
+:root {
+    --dark: #374151;
+    --darker: #1A8318;
+    --darkest: #000000;
+    --gray: #A9A9A9;
+    --light: #FAEBD7;
+    --burgundy: #800000;
+    --blue: #7FFFD4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Arial', 'Times New Roman';
 }
 
 body {
-    background-color: rgb(116, 239, 116);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--darkest);
+    color: whitesmoke;
 }
 
-h1 {
-    text-align: left;
-    color: rgb(255, 255, 255);
-    background-color: rgb(252, 166, 105);
-    font-size: 32px;
-    font-weight: italic;
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.nav a {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--darker);
+    margin-bottom: 1rem;
+    
+}
+
+#new-task-form {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: var(--light);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--burgundy);
+    font-size: 1.25rem;
+}
+
+#new-task-submit {
+    color: var(--darker);
+    font-size: 1.25rem;
+    font-weight: 700;
+
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+
+
+}
+
+.task-list {
+    padding: 1rem;
+    color: var(--light);
+}
+
+#tasks .content {
+    display: flex;
+    justify-content:space-between;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+
+}
+
+#tasks .actions {
+    display: flex;
+    justify-content:space-between;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+#tasks .actions .content {
     color: white;
-    background-color: blue;
 }
 
-.nav li {
-    display: inline;
-}
-
-.nav {
-    padding-top: 24px;
-    padding-right: 24px;
-}
-
-.nav a:hover {
-    color: gold;    
-}
-
-.container-fluid {
-    border: 12px solid;
-    border-color: purple;
-}
-
-.accordion-button {
-    color: red;
-    background-color: magenta;
-    font-weight: bold;
-    position: relative;
-}
-
-.accordion {
-    color: black;
-    font-weight: bold;
-}
-
-.accordion-item {
-    background-color: green;
-}
-
-.form-task {
-    background-color: orange;
-}
-
-.card {
-    color: pink;
-    background-color: black;
-    font-weight: bold;
-    text-align: center;
-    font-size: 10px;
-}
-
-.btn-primary {
-    color: white;
-    background-color: green;
-}
-
-footer {
-    text-align: center;
-    color: gray
-}
 
 
 
