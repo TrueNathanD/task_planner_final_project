@@ -80,6 +80,14 @@ main {
     color: var(--light);
 }
 
+#task .task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
 #tasks .content {
     display: flex;
     justify-content:space-between;
@@ -96,16 +104,18 @@ main {
     justify-content:space-between;
     background-color: var(--darker);
     padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
+    margin: 0 1rem;
+
 
 }
 
-#tasks .actions .content {
-    color: white;
+
+#tasks .actions button {
+    cursor: pointer;
+    margin: 0 0.5 rem;
+    font-size: 1.125 rem;
+    font-weight: 700;
 }
-
-
 
 
 /* ↓↓↓ Watch out! I'm testing out code below! ↓↓↓ */
