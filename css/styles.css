@@ -1,17 +1,7 @@
-:root {
-    --dark: #374151;
-    --darker: #1A8318;
-    --darkest: #000000;
-    --gray: #A9A9A9;
-    --light: #FAEBD7;
-    --burgundy: #800000;
-    --blue: #7FFFD4;
-}
-
 * {
     box-sizing: border-box;
-    /* margin: 0; */
-    font-family: 'Arial', 'Times New Roman';
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -19,104 +9,150 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-image: linear-gradient(180deg, rgb(11, 213, 71), #74d0c7);
-    color: rgb(255, 255, 255);
 }
 
-header {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
+h1 {
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: 2px 2px rgb(38, 38, 38);
+    text-align: left;
+}
+
+.h2-one {
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    text-shadow: 2px 2px rgb(38, 38, 38);
+    text-align: left;
+}
+
+.form-group {
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-shadow: 1px 1px rgb(38, 38, 38);
+    text-align: left;
+}
+
+
+.btn-primary {
+    height: 40px;
+    color: white;
+    background-color: rgba(0, 214, 0, 0.714);
+    border: 2px solid rgb(255, 255, 255);
+    margin: 4px 4px 0px 0px;
+    padding: 4px;
+    box-shadow: 4px 4px 4px rgb(4, 80, 0);
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    color: rgb(242, 255, 0);
+    background-color: rgb(43, 255, 0);
+    border: 4px solid rgb(255, 255, 255);
+    margin: 4px 4px 0px 0px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(4, 80, 0);
+}
+
+.container {
+    color: rgb(255, 255, 255);
+    background-color: rgb(11, 213, 71, 0.8);
+    margin: auto;
+    padding: 9px;
+    box-shadow: 4px 4px 4px rgb(4, 80, 0);
+    border: 2px solid white;
+}
+
+.h2-two {
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: 2px 2px rgb(38, 38, 38);
+}
+
+.display-4 {
+/* h1 text "My Tasks" in jumbotron */
+    color: white;
+    background-color: rgba(0, 183, 55, 0.8);
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 70px;
+    font-weight: 800;
+    font-style: bold;
+    border: 2px solid white;
+    margin: 12px;
+    padding: 4px;
+    text-shadow: 2px 2px rgb(38, 38, 38);
+    box-shadow: 4px 4px 4px rgb(4, 80, 0);
     text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: var(--darker);
-    margin-bottom: 1rem;
+.jumbotron {
+    color: white;
+    background-color: rgb(11, 213, 71, 0.8);
+    border: 2px solid white;
+    margin: 12px;
+    padding: 4px;
+    box-shadow: 4px 4px 4px rgb(4, 80, 0);
+    text-align: center;
 }
 
-#new-task-form {
-    display: flex;
+.card {
+    color: rgb(255, 255, 255);
+    background-color:rgb(11, 213, 71, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 4px 4px 4px rgb(4, 80, 0);
 }
 
-input, button {
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
+.card-body {
+    background-color:rgb(146, 146, 146, 0.5);
 }
 
-#new-task-input {
-    flex: 1 1 0%;
-    background-color: var(--light);
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-right: 1rem;
-    color: var(--burgundy);
-    font-size: 1.25rem;
+.card-title {
+    background-color:rgb(11, 213, 71, 0.5);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2px;
+    text-shadow: 1px 1px rgb(38, 38, 38);
 }
 
-#new-task-submit {
-    color: var(--darker);
-    font-size: 1.25rem;
-    font-weight: 700;
-
+.card-text {
+    border: 1px solid rgb(255, 255, 255, 0.7);
+    padding: 2px;
+    margin: 2px;
+    text-shadow: 1px 1px rgb(38, 38, 38);
+    box-shadow: 1px 1px rgb(4, 80, 0);
 }
 
-main {
-    flex: 1 1 0%;
-    padding: 2rem 1rem;
-    max-width: 100%;
-    margin: 0 auto;
-
-
+a.btn.btn-primary {
+    height: 40px;
+    color: white;
+    background-color: rgba(0, 214, 0, 0.714);
+    border: 2px solid rgb(255, 255, 255);
+    margin: 4px 4px 0px 0px;
+    padding: 4px;
+    box-shadow: 4px 4px 4px rgb(4, 80, 0);
+    transition: all 0.3s ease;
 }
 
-.task-list {
-    padding: 1rem;
-    color: var(--light);
+a.btn.btn-primary:hover {
+    color: rgb(242, 255, 0);
+    background-color: rgb(43, 255, 0);
+    border: 4px solid rgb(255, 255, 255);
+    margin: 4px 4px 0px 0px;
+    padding: 4px;
+    box-shadow: 5px 5px 5px rgb(4, 80, 0);
 }
 
-#task .task {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
-
-#tasks .content {
-    display: flex;
-    justify-content:space-between;
-    background-color: var(--darker);
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
-
-#tasks .actions {
-    display: flex;
-    justify-content:space-between;
-    background-color: var(--darker);
-    padding: 1rem;
-    margin: 0 1rem;
-}
-
-
-#tasks .actions button {
-    cursor: pointer;
-    margin: 0 0.5 rem;
-    font-size: 1.125 rem;
-    font-weight: 700;
-}
-
+/* (GOOD CODE) Footer (GOOD CODE) */
 .footer-text {
     color: rgb(255, 255, 255);
     background-color: rgba(0, 255, 76, 0.2);
     font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 20px;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     text-align: center;
@@ -140,73 +176,4 @@ main {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-
-p {
-    margin: 0px;
-}
-
-input#new-task-input {
-    box-shadow: 4px 4px rgb(45, 45, 45);
-}
-
-.container-fluid {
-    height: 400px;
-    margin: auto;
-    float: center;
-    background-color:rgb(11, 213, 71, 0.3);
-    border-radius: 1rem;
-    box-shadow: 4px 4px rgb(45, 45, 45);
-}
-
-.form-container {
-    background-color:rgb(11, 213, 71, 0.3);
-    border-radius: 1rem;
-    box-shadow: 4px 4px rgb(45, 45, 45);
-}
-
-div.form-task {
-    background-color:rgb(11, 213, 71, 0.3);
-    border-radius: 1rem;
-    box-shadow: 4px 4px rgb(45, 45, 45);
-}
-
-.list-group-item {
-    text-align: center;
-    background-color: rgb(255, 255, 255, 0.3);
-    box-shadow: 4px 4px rgb(45, 45, 45);
-    margin: 3px;
-}
-
-a.btn.btn-primary {
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 255, 0, 0.5);
-    text-align: center;
-    float: right;
-    border: 3px white solid;
-    border-radius: 1rem;
-    box-shadow: 4px 4px rgb(45, 45, 45);
-    margin: 8px;
-}
-
-div.form-task {
-    color: black;
-    background-color: rgb(255, 255, 255, 0.3);
-    box-shadow: 4px 4px rgb(45, 45, 45);
-    margin: 3px;
-}
-
-input {
-    border: 1px rgb(92, 90, 90) solid;
-}
-
-.card {
-    background-color:rgb(11, 213, 71, 0.3);
-    border-radius: 1rem;
-    box-shadow: 4px 4px rgb(45, 45, 45);
-}
-
-.card-body {
-    background-color:rgb(11, 213, 71, 0.3);
-    border-radius: 1rem;
-    box-shadow: 4px 4px rgb(45, 45, 45);
-}
+/* (GOOD CODE) Footer (GOOD CODE) */

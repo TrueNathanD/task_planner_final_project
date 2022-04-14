@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Task-FFIRMATION Planner </title>
+  <title>Task-reation!</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -23,90 +24,135 @@
 
 </head>
 <body>
-  <header>
-    <h1>Affirmation List</h1>
-      <form id="new-task-form">
-        <input type ="text" id="new-task-input" placeholder="What affirmations do you want to tackle first?">
-        <input type="submit" id="new-task-submit"value="Add task">
-      </form>
-  </header>
+<header>
 
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-3 form-container">
-                <form action="" method="get" class="form-task">
-                  <div class="form-task">
-                    <label for="task-name">Task Name: </label>
-                    <input type="text" name="task-name" id="task-name" required>
-                  </div>
-                  <div class="form-task">
-                    <label for="task-description">Task Description: </label>
-                    <input type="task-description" name="task-description" id="task-description" required>
-                  </div>
-                  <div class="form-task">
-                    <label for="task-assign">Assign Task To: </label>
-                    <input type="task-assign" name="task-assign" id="task-assign" required>
-                  </div>
-                  <div class="form-task">
-                    <label for="task-due">Task Due By: </label>
-                    <input type="task-due" name="task-due" id="task-due" required>
-                  </div>
-                  <br>
-                  <div class="form-task">
-                    <input type="submit" value="ADD TASK!">
-                  </div>
-                </form>
-              </div>
-              <div class="col-2">
-                <div class="card">
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Task Name</li>
-                      <li class="list-group-item">Task Description</li>
-                      <li class="list-group-item">Task Assigned To</li>
-                      <li class="list-group-item">Task Due By</li>
-                    </ul>
-                    <a href="#" class="btn btn-primary">Submit</a>
-                  </div>
-                </div>
-              </div>
+</header>
+<div class="container">
+  <h1 class="my-5">Task-reation!</h1>
+    <div class="row mb-5">
+      <div class="col">
+        <h2 class="h2-one">Create New Task</h2>
+        <form id="newTaskForm">
+          <div class="form-group">
+            <label for="newTaskNameInput">Name</label>
+            <input type="text" class="form-control" id="newTaskNameInput">
+          </div>
+          <div class="form-group">
+            <label for="newTaskDescription">Description</label>
+            <textarea type="text" class="form-control" id="newTaskDescription"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="newTaskAssignedTo">Assigned To</label>
+              <input type="text" class="form-control" id="newTaskAssignedTo">
+            </div>
+            <div class="form-group col">
+              <label for="newTaskDueDate">Due Date</label>
+              <input type="date" class="form-control" id="newTaskDueDate">
             </div>
           </div>
+          <button type="submit" class="btn btn-primary btn-block">Create Task</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h2 class="h2-two">Tasks:</h2>
+        <ul class="list-group" id="tasksList">
 
-  <main>
-    <section class="task-list">
-      <h2>Tasks</h2>
-      <div id="tasks">
-      <div class="content">
-        <input type="text"
-          class="text"
-          value="My Task"
-          readonly 
-          />
+        </ul>
+      </div>
+      <div class="col">
 
-      <!-- </div>
-        <div class="actions">
-          <button class="complete">Complete</button>
-          <button class="delete">Delete</button>  -->
+      </div>
+    </div>
+</div>
 
-    </section>
-  </main>
+<div class="jumbotron">
+  <h1 class="display-4">My Tasks</h1>
+  <div id="list-items">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Task #1</h5>
+        <p class="card-text">Task #1 Description</p>
+        <p class="card-text">Name</p>
+        <p class="card-text">Due Date</p>
+        <span class="badge badge-primary">Status</span>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+    <br>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Task #2</h5>
+        <p class="card-text">Task #2 Description</p>
+        <p class="card-text">Name</p>
+        <p class="card-text">Due Date</p>
+        <span class="badge badge-primary">Status</span>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+    <br>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Task #3</h5>
+        <p class="card-text">Task #3 Description</p>
+        <p class="card-text">Name</p>
+        <p class="card-text">Due Date</p>
+        <span class="badge badge-primary">Status</span>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+    <br>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Task #4</h5>
+        <p class="card-text">Task #4 Description</p>
+        <p class="card-text">Name</p>
+        <p class="card-text">Due Date</p>
+        <span class="badge badge-primary">Status</span>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+    <br>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Task #5</h5>
+        <p class="card-text">Task #5 Description</p>
+        <p class="card-text">Name</p>
+        <p class="card-text">Due Date</p>
+        <span class="badge badge-primary">Status</span>
+        <a href="#" class="btn btn-primary">Delete</a>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
   <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   <!-- Local JavaScript -->
-  <script src="js/app.js"></script>
+  <script src="js/taskManager.js"></script>
+  <script src="js/index.js"></script>
+
 </body>
+
 <footer>
-  
-  <div class="footer-text">
-    <p>A Generation USA Student Project</p>
-    <div class="footer-icon">
-      <a href="https://www.linkedin.com/in/akenyae-jones/"><i class="footer-icon fa-brands fa-linkedin"></i>Akenyae Jones</a>
-      <a href="https://www.linkedin.com/in/rafael-m-correa-172a12203/"><i class="footer-icon fa-brands fa-linkedin"></i>Rafael Correa</a>
-      <a href="https://www.linkedin.com/in/truenathand/"><i class="footer-icon fa-brands fa-linkedin"></i>Nathan Strzelczyk</a>
-    </div>
+<div class="footer-text">
+  <p>A Generation USA Student Project</p>
+  <div class="footer-icon">
+    <a href="https://www.linkedin.com/in/akenyae-jones/"><i class="footer-icon fa-brands fa-linkedin"></i>Akenyae Jones</a>
+    <a href="https://www.linkedin.com/in/rafael-m-correa-172a12203/"><i class="footer-icon fa-brands fa-linkedin"></i>Rafael Correa</a>
+    <a href="https://www.linkedin.com/in/truenathand/"><i class="footer-icon fa-brands fa-linkedin"></i>Nathan Strzelczyk</a>
   </div>
+</div>
 </footer>
 </html>
