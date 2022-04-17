@@ -8,16 +8,25 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient(180deg, rgb(11, 213, 71), #74d0c7);
+    background-image: linear-gradient(rgb(115, 255, 0), rgb(0, 64, 255), rgb(218, 0, 141));
 }
 
-h1 {
+.my-5 {
     color:rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 50px;
-    text-shadow: 2px 2px rgb(38, 38, 38);
+    font-weight: 900;
+    font-style: italic;
+    font-size: 60px;
     text-align: left;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    transition: all 0.3s ease;
+    height: 40px;
+}
+
+.my-5:hover {
+    font-size: 70px;
+    color: rgb(221, 255, 0);
+    text-shadow: 4px 4px rgb(0, 0, 0);
 }
 
 .h2-one {
@@ -38,32 +47,31 @@ h1 {
     text-align: left;
 }
 
-
 .btn-primary {
     height: 40px;
-    color: white;
-    background-color: rgba(0, 214, 0, 0.714);
-    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 214, 0, 0.8);
+    border: 2px solid rgb(255, 255, 255, 0.5);
     margin: 4px 4px 0px 0px;
     padding: 4px;
     box-shadow: 4px 4px 4px rgb(4, 80, 0);
     transition: all 0.3s ease;
 }
 .btn-primary:hover {
-    color: rgb(242, 255, 0);
+    color: rgb(255, 255, 255);
     background-color: rgb(43, 255, 0);
     border: 4px solid rgb(255, 255, 255);
     margin: 4px 4px 0px 0px;
     padding: 5px;
-    box-shadow: 5px 5px 5px rgb(4, 80, 0);
+    box-shadow: 5px 5px 5px rgb(13, 255, 0, 0.5);
 }
 
 .container {
     color: rgb(255, 255, 255);
-    background-color: rgb(11, 213, 71, 0.8);
+    background-color: rgba(0, 255, 17, 0.65);
     margin: auto;
     padding: 9px;
-    box-shadow: 4px 4px 4px rgb(4, 80, 0);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
     border: 2px solid white;
 }
 
@@ -72,48 +80,69 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 30px;
-    text-shadow: 2px 2px rgb(38, 38, 38);
+    text-shadow: 2px 2px rgb(0, 0, 0);
 }
 
 .display-4 {
 /* h1 text "My Tasks" in jumbotron */
     color: white;
-    background-color: rgba(0, 183, 55, 0.8);
-    font-family: 'Rubik Puddles', cursive;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
     font-size: 70px;
     font-weight: 800;
     font-style: bold;
     border: 2px solid white;
     margin: 12px;
     padding: 4px;
-    text-shadow: 2px 2px rgb(38, 38, 38);
-    box-shadow: 4px 4px 4px rgb(4, 80, 0);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
     text-align: center;
+    height: 120px;
+    font-style: italic;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.display-4:hover {
+    font-size: 80px;
+    color: rgba(255, 234, 0);
+    text-shadow: 4px 4px rgb(0, 0, 0);
 }
 
 .jumbotron {
     color: white;
-    background-color: rgb(11, 213, 71, 0.8);
+    background-image: linear-gradient(rgba(197, 0, 177, 0.515), rgba(144, 0, 139, 0.8));
     border: 2px solid white;
     margin: 12px;
     padding: 4px;
-    box-shadow: 4px 4px 4px rgb(4, 80, 0);
+    box-shadow: 4px 4px 4px rgb(0, 0, 0);
     text-align: center;
+}
+
+div#list-items {
+    background: rgba(61, 109, 253, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(61, 109, 253, 0.3);
 }
 
 .card {
     color: rgb(255, 255, 255);
-    background-color:rgb(11, 213, 71, 0.5);
+    background-color:rgba(11, 35, 213, 0.5);
     border: 1px solid rgb(255, 255, 255);
-    box-shadow: 4px 4px 4px rgb(4, 80, 0);
+    box-shadow: 4px 4px 4px rgb(0, 41, 80);
+    background-image: url('/images/art_image_galaxy_below.jpg');
+    background-size: cover;
+    background-color: black;
 }
 
 .card-body {
-    background-color:rgb(146, 146, 146, 0.5);
+    background-color:rgba(146, 146, 146, 0.5);
 }
 
 .card-title {
-    background-color:rgb(11, 213, 71, 0.5);
+    background-color:rgba(51, 38, 239, 0.5);
     border: 1px solid rgb(255, 255, 255);
     padding: 2px;
     text-shadow: 1px 1px rgb(38, 38, 38);
@@ -130,27 +159,26 @@ h1 {
 a.btn.btn-primary {
     height: 40px;
     color: white;
-    background-color: rgba(0, 214, 0, 0.714);
+    background-color: rgba(214, 0, 0, 0.8);
     border: 2px solid rgb(255, 255, 255);
     margin: 4px 4px 0px 0px;
     padding: 4px;
-    box-shadow: 4px 4px 4px rgb(4, 80, 0);
+    box-shadow: 4px 4px 4px rgba(72, 69, 69, 0.5);
     transition: all 0.3s ease;
 }
 
 a.btn.btn-primary:hover {
-    color: rgb(242, 255, 0);
-    background-color: rgb(43, 255, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
     border: 4px solid rgb(255, 255, 255);
-    margin: 4px 4px 0px 0px;
-    padding: 4px;
-    box-shadow: 5px 5px 5px rgb(4, 80, 0);
+    box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
 }
 
-/* (GOOD CODE) Footer (GOOD CODE) */
 .footer-text {
     color: rgb(255, 255, 255);
     background-color: rgba(0, 255, 76, 0.2);
+    background-image: -webkit-linear-gradient(left, rgba(223, 28, 28, 0.3) 20%, #ebc630 37.5%, #e48156, #b67a7f 62.5%, white 75%);
+    background-image: linear-gradient(90deg, rgb(0, 0, 0) 25%, #e0c55c 37.5%, #e48b65, #ad7277 62.5%, rgb(0, 0, 0, 0.3) 75%);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -162,12 +190,16 @@ a.btn.btn-primary:hover {
     position: fixed;
     width: 100%;
     transition: all 0.3s ease;
+    background-position: right center;
+    background-size: 400% auto;
 }
 
 .footer-text:hover {
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+    background-color: gradient(to bottom, rgb(11, 213, 71), rgb(4, 88, 255), red);
     border: 4px solid rgb(255, 255, 255);
+    background-position: left center;
+    transition: background-position 2000ms ease-out;
 }
 
 .footer-icon, a:link {
@@ -176,4 +208,3 @@ a.btn.btn-primary:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-/* (GOOD CODE) Footer (GOOD CODE) */
