@@ -51,6 +51,7 @@ body {
     text-align: left;
 }
 
+/* The Create Task Button */
 .btn-primary {
     height: 40px;
     color: rgb(255, 255, 255);
@@ -58,6 +59,7 @@ body {
     border: 2px solid rgb(255, 255, 255, 0.5);
     margin: 4px 4px 0px 0px;
     padding: 4px;
+    height: 50px;
     box-shadow: 4px 4px 4px rgb(4, 80, 0);
     transition: all 0.3s ease;
 }
@@ -147,6 +149,7 @@ div#list-items {
     background-image: url('/images/art_image_galaxy_below.jpg');
     background-size: cover;
     background-color: black;
+    margin: 4px auto;
 }
 
 .card {
@@ -154,9 +157,9 @@ div#list-items {
     background-color:rgba(11, 35, 213, 0.3);
     border: 1px solid rgb(255, 255, 255);
     box-shadow: 4px 4px 4px rgb(0, 41, 80);
-    background-image: url('/images/art_image_galaxy_below.jpg');
     background-size: cover;
     background-color: black;
+    display: grid;
 }
 
 .card-body {
@@ -164,44 +167,93 @@ div#list-items {
 }
 
 h5 {
-    background-color:rgba(51, 38, 239, 0.5);
-    border: 1px solid rgb(255, 255, 255);
-    padding: 2px;
-    text-shadow: 1px 1px rgb(38, 38, 38);
+    background: rgba(82, 189, 255, 0.4);
+    margin: 4px;
+    padding: 10px 10px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-small {
-    border: 1px solid rgb(255, 255, 255, 0.7);
-    padding: 2px;
-    margin: 2px;
-    text-shadow: 1px 1px rgb(38, 38, 38);
-    box-shadow: 1px 1px rgb(4, 80, 0);
+assigned-plus-date {
+    background: rgba(82, 189, 255, 0.1);
+    margin: 4px;
+    padding: 5px 5px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 
-p {
-    border: 1px solid rgb(255, 255, 255, 0.7);
-    padding: 2px;
-    margin: 2px;
-    text-shadow: 1px 1px rgb(38, 38, 38);
-    box-shadow: 1px 1px rgb(4, 80, 0);
+/* The Created Task's Description Box */
+.list-group-item p {
+    background: rgba(0, 0, 0, 0.6);
+    margin: 4px;
+    padding: 5px 5px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
 }
 
-button.btn-outline-danger-delete-button {
+/* The Delete Task Button */
+.delete-button {
     height: 40px;
     color: white;
     background-color: rgba(214, 0, 0, 0.8);
     border: 2px solid rgb(255, 255, 255);
     margin: 4px 4px 0px 0px;
     padding: 4px;
+    height: 40px;
+    width: 80px;
     box-shadow: 4px 4px 4px rgba(72, 69, 69, 0.5);
     transition: all 0.3s ease;
 }
+.delete-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border: 4px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
+}
 
-.btn-outline-danger-delete-button:hover {
-color: rgb(255, 255, 255);
-background-color: rgb(255, 0, 0);
-border: 4px solid rgb(255, 255, 255);
-box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
+/* The Mark Task As Done Button */
+.done-button {
+    height: 40px;
+    color: white;
+    background-color: rgba(64, 29, 205, 0.8);
+    border: 2px solid rgb(255, 255, 255);
+    margin: 4px 4px 0px 0px;
+    padding: 4px;
+    height: 40px;
+    width: 120px;
+    box-shadow: 4px 4px 4px rgba(72, 69, 69, 0.5);
+    transition: all 0.3s ease;
+}
+.done-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 8, 255);
+    border: 4px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgba(60, 0, 255, 0.5);
+}
+
+/* The Task Incomplete Indicator */
+.badge-danger {
+    color: rgb(255, 0, 0);
+    transition: all 0.3s ease;
+}
+.badge-danger:hover {
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+/* The Task Done Indicator */
+.badge-success {
+    color: rgb(0, 255, 0);
+    transition: all 0.3s ease;
+}
+.badge-success:hover {
+    background-color: rgb(0, 0, 0, 0.6);
 }
 
 .card-title {
@@ -217,24 +269,6 @@ box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
     margin: 2px;
     text-shadow: 1px 1px rgb(38, 38, 38);
     box-shadow: 1px 1px rgb(4, 80, 0);
-}
-
-a.btn.btn-primary {
-    height: 40px;
-    color: white;
-    background-color: rgba(214, 0, 0, 0.8);
-    border: 2px solid rgb(255, 255, 255);
-    margin: 4px 4px 0px 0px;
-    padding: 4px;
-    box-shadow: 4px 4px 4px rgba(72, 69, 69, 0.5);
-    transition: all 0.3s ease;
-}
-
-a.btn.btn-primary:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 0, 0);
-    border: 4px solid rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.5);
 }
 
 .footer-text {

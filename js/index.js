@@ -173,6 +173,10 @@ tasksList.addEventListener('click', (event) => {
 
 
 
+
+
+        
+
         // Saves the tasks to local storage
         taskManager.save();
 
