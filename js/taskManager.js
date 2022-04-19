@@ -41,6 +41,13 @@
 
 
 
+
+
+
+
+
+// WATCH OUT! The code below is test code!
+
 // Let's go! This adds a delete button to the task (class="delete-button")
 const createTaskHtml = (id, name, description, assignedTo, dueDate, status) => `
     <li class="list-group-item" data-task-id=${id}>
@@ -49,11 +56,11 @@ const createTaskHtml = (id, name, description, assignedTo, dueDate, status) => `
             <span class="badge ${status === 'TODO' ? 'badge-danger' : 'badge-success'}">${status}</span>
         </div>
         <div class="d-flex w-100 mb-3 justify-content-between">
-            <small>Assigned To: ${assignedTo}</small>
-            <small>Due: ${dueDate}</small>
+            <assigned-plus-date>Assigned To: ${assignedTo}</assigned-plus-date>
+            <assigned-plus-date>Due: ${dueDate}</assigned-plus-date>
         </div>
         <p>${description}</p>
-        <div class="d-flex w-100 justify-content-end">
+        <div class="d-flex w-100 justify-content-center">
             <button class="btn btn-outline-success done-button mr-1 ${status === 'TODO' ? 'visible' : 'invisible'}">Mark As Done</button>
             <button class="btn btn-outline-danger delete-button">Delete</button>
         </div>
@@ -66,6 +73,7 @@ class TaskManager {
         this.currentId = currentId;
     }
 
+
     addTask(name, description, assignedTo, dueDate) {
         const task = {
             id: this.currentId++,
@@ -76,27 +84,37 @@ class TaskManager {
             status: 'TODO'
         };
 
+
+
         this.tasks.push(task);
     }
 
-    // This creates the deleteTask method
+
+
+    // This code creates deleteTask
+
     deleteTask(taskId) {
-        // Creates an empty array and store it in a new variable, newTasks
+        // Here's an empty array just waiting for a new variable! (newTasks)
         const newTasks = [];
 
-        // Loop over the tasks
+        // Loops over it!
+
         for (let i = 0; i < this.tasks.length; i++) {
-            // Get the current task in the loop
+            // Gets the current task!
             const task = this.tasks[i];
 
-            // Check if the task id is not the task id passed in as a parameter
+
+            // This checks if the task ID is the wrong task (bad parameter!)
             if (task.id !== taskId) {
-                // Push the task to the newTasks array
+                // ...and pushes the task to the newTasks array!
                 newTasks.push(task);
             }
         }
 
-        // Set this.tasks to newTasks
+
+
+
+
         this.tasks = newTasks;
     }
 
@@ -140,6 +158,8 @@ class TaskManager {
 
         localStorage.setItem('tasks', tasksJson);
 
+
+        
         const currentId = String(this.currentId);
 
         localStorage.setItem('currentId', currentId);
@@ -151,6 +171,7 @@ class TaskManager {
 
             this.tasks = JSON.parse(tasksJson);
         }
+
 
         if (localStorage.getItem('currentId')) {
             const currentId = localStorage.getItem('currentId');
