@@ -35,7 +35,7 @@
 <!-- fa-shake is the cheat code for shakin'! -->
 
 <div class="header-bar">
-  <audio id="myAudio" src="./music/virtual_boy_by_krayzius_and_brainstorm.mp3" type='audio/mp4' volume="0.1">Sorry! You or your browser isn't cool enough to hear this!</audio>
+  <audio id="myAudio" src="./music/virtual_boy_by_krayzius_and_brainstorm.mp3" type='audio/mp4'>Sorry! You or your browser isn't cool enough to hear this!</audio>
 
   <i id="music-icon" class="fa-solid fa-music"></i>
   <button type="button" class="btn-intro btn-intro-music" onclick="aud_play_pause()">Song 1</button>
@@ -56,6 +56,15 @@
     <img class="modal-content" id="img01">
     <div id="caption">Galaxy Below, generated at Wombo.art</div>
   </div>
+
+  <img id="myImg" src="images/art_image_big_night_stars.jpg" style="width:100%;max-width:40px">
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img02">
+    <div id="caption">Galaxy Below, generated at Wombo.art</div>
+  </div>
+
+
 </div>
 <br>
 <br>
@@ -199,7 +208,7 @@ function aud_play_pause() {
   }
 }
 
-document.getElementById("myAudio").volume = 0.05;
+document.getElementById("myAudio").volume = 0.025;
   </script>
 
 </body>
