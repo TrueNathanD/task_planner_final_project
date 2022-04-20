@@ -13,6 +13,5 @@
 <h3>Team Members:</h3>
   <ul>
   <li>Akenyae Jones</li>
-  <li>Rafael Correa</li>
   <li>Nathan Strzelczyk</li>
 </ul>
