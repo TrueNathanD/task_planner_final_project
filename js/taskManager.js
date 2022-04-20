@@ -37,7 +37,10 @@ class TaskManager {
             dueDate: dueDate,
             status: 'TODO'
         };
-
+        if (name.length === 0 || description.length === 0 || assignedTo.length === 0 || dueDate.length === 0) {
+            alert("Form inputs cannot be blank!");
+            return false;
+        }
 
 
         this.tasks.push(task);
