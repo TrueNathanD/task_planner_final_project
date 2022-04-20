@@ -129,6 +129,42 @@ body {
     background-position: center;
 }
 
+.sign {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign-word {
+    font-size: 5.6rem;
+    text-align: center;
+    line-height: 1;
+    color: #c6e2ff;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+}
+    to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+}
+}
+
 .my-5 {
     color:rgb(255, 255, 255);
     font-family: 'Arial', sans-serif;
@@ -136,16 +172,9 @@ body {
     font-style: italic;
     font-size: 60px;
     text-align: center;
-    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.8);
     transition: all 0.3s ease;
     height: 40px;
     margin: auto;
-}
-
-.my-5:hover {
-    font-size: 70px;
-    color: rgb(255, 234, 0);
-    text-shadow: 4px 4px rgb(0, 0, 0);
 }
 
 .h2-one {
@@ -211,26 +240,48 @@ body {
     text-align: left;
 }
 
-.display-4 {
-/* h1 text "My Tasks" in jumbotron */
-    color: white;
+.sign2 {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
     font-family: 'Arial', sans-serif;
-    font-size: 70px;
-    font-weight: 800;
-    font-style: bold;
-    margin: 12px;
-    padding: 4px;
-    text-align: center;
-    height: 120px;
+    font-weight: 900;
     font-style: italic;
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    font-size: 60px;
+    text-align: center;
     transition: all 0.3s ease;
+    height: 120px;
+}
+.sign-word2 {
+    font-size: 5.6rem;
+    text-align: center;
+    line-height: 1;
+    color: #c6e2ff;
+    animation: neon .08s ease-in-out infinite alternate;
 }
 
-.display-4:hover {
-    font-size: 80px;
-    color: rgb(255, 234, 0);
-    text-shadow: 4px 4px rgb(0, 0, 0);
+@keyframes neon {
+    from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+}
+    to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+}
 }
 
 .jumbotron {
@@ -256,7 +307,7 @@ div#list-items {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(0, 255, 42, 0.3);
-    height: 430px auto;
+    height: 430px;
 }
 
 .list-group-item {
