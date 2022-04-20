@@ -49,9 +49,13 @@
   <button type="submit" class="btn-intro btn-extro-bottom">#Bottom</button>
   <i id="heli-icon" style="--fa-animation-duration: 3s; --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 1;"" class="fa-solid fa-helicopter"></i>
   <button type="submit" class="btn-intro btn-extro-top">#Top</button>
-  <i id="image-icon-1" style="--fa-animation-duration: 3s;" class="fa-regular fa-file-image"></i>
-  <i id="image-icon-2" style="--fa-animation-duration: 3s;" class="fa-regular fa-file-image"></i>
-  <i id="image-icon-3" style="--fa-animation-duration: 3s;" class="fa-regular fa-file-image"></i>
+
+  <img id="myImg" src="images/art_image_galaxy_below.jpg" style="width:100%;max-width:40px">
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption">Galaxy Below, generated at Wombo.art</div>
+  </div>
 </div>
 <br>
 <br>
@@ -167,19 +171,19 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#image-icon-1").hover(function(){
-		$(this).toggleClass("fa-shake");
+		$(this).toggleClass("");
 	});
 });
 
 $(document).ready(function(){
 	$("#image-icon-2").hover(function(){
-		$(this).toggleClass("fa-shake");
+		$(this).toggleClass("");
 	});
 });
 
 $(document).ready(function(){
 	$("#image-icon-3").hover(function(){
-		$(this).toggleClass("fa-shake");
+		$(this).toggleClass("");
 	});
 });
   </script>
@@ -195,9 +199,8 @@ function aud_play_pause() {
   }
 }
 
-document.getElementById("myAudio").volume = 0.1;
+document.getElementById("myAudio").volume = 0.05;
   </script>
-
 
 </body>
 
