@@ -123,7 +123,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 3, 166), rgb(218, 0, 0), rgb(218, 0, 141));
     background-image: url('/images/art_image_big_night_stars.jpg');
     background-size: cover;
     background-position: center;
