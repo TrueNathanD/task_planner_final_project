@@ -34,11 +34,11 @@
 <!-- fa-flip is the cheat code for flippin'! -->
 <!-- fa-shake is the cheat code for shakin'! -->
 
-
-
 <div class="header-bar">
+  <audio id="myAudio" src="./music/virtual_boy_by_krayzius_and_brainstorm.mp3" type='audio/mp4' volume="0.1">Sorry! You or your browser isn't cool enough to hear this!</audio>
+
   <i id="music-icon" class="fa-solid fa-music"></i>
-  <button type="submit" class="btn-intro btn-intro-music">Song 1</button>
+  <button type="button" class="btn-intro btn-intro-music" onclick="aud_play_pause()">Song 1</button>
   <i id="list-icon" class="fa-solid fa-list-check"></i>
   <button type="submit" class="btn-intro btn-intro-create">#Create</button>
   <i id="card-icon" class="fa-solid fa-address-card"></i>
@@ -129,7 +129,6 @@
 
   <!-- Header Bar Icon Animations: Adds class on hover, tosses it into poverty when not! -->
   <script>
-
 $(document).ready(function(){
 	$("#music-icon").hover(function(){
 		$(this).toggleClass("fa-flip");
@@ -183,8 +182,20 @@ $(document).ready(function(){
 		$(this).toggleClass("fa-shake");
 	});
 });
+  </script>
 
-</script>
+<!-- Music Player for Song 1 -->
+  <script>
+function aud_play_pause() {
+  var myAudio = document.getElementById("myAudio");
+  if (myAudio.paused) {
+    myAudio.play();
+  } else {
+    myAudio.pause();
+  }
+}
+
+document.getElementById("myAudio").volume = 0.1;
   </script>
 
 
