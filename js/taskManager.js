@@ -1,52 +1,6 @@
-// // updated and used console log to make sure task manager works
-
-//                 // *** Where we left off ***
-// function createTaskHtml() {
-//     'name', 'description', 'assignedTo', 'dueDate', 'status'
-
-// }
-
-
-// class TaskManager {
-//     constructor(currentId = 1) {
-//         this.tasks = [];
-//         this.currentId = currentId;
-//     }
-//     addTask(name, description, assignedTo, dueDate, status) {
-//         const task = {
-//             id: this.currentId++,
-//             name: name,
-//             description: description,
-//             dueDate: dueDate,
-//             status: 'TODO'
-//         };
-//         this.tasks.push(task);
-// };
-
-
-// getTaskById(taskId) {
-//     let foundTask;
-
-//     for (let i = 0; i < this.tasks.length; i++) {
-//         const task = this.tasks[i];
-
-//         if (task.id === taskId) {
-//             foundTask = task;
-//         }
-//     }
-//     return foundTask;
-// }
-// }
-// // created an array to connect with the task objects
 
 
 
-
-
-
-
-
-// WATCH OUT! The code below is test code!
 
 // Let's go! This adds a delete button to the task (class="delete-button")
 const createTaskHtml = (id, name, description, assignedTo, dueDate, status) => `
@@ -87,9 +41,8 @@ class TaskManager {
 
 
         this.tasks.push(task);
-    }
 
-
+}
 
     // This code creates deleteTask
 
@@ -117,6 +70,7 @@ class TaskManager {
 
         this.tasks = newTasks;
     }
+
 
 
     getTaskById(taskId) {
@@ -179,4 +133,18 @@ class TaskManager {
             this.currentId = Number(currentId);
         }
     }
+}
+
+function myFun(){
+    var newTaskNameInput=document.getElementById('newTaskNameInput').value;
+    alert("Enter information please");
+
+    var newTaskDescription=document.getElementById('newTaskDescription').value;
+    alert("Enter information please");
+
+    var newTaskAssignedTo=document.getElementById('newTaskAssignedTo').value;
+    alert("Enter information please");
+
+    var newTaskDue=document.getElementById('newTaskDueDate').value;
+    alert("Enter information please");
 }
