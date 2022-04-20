@@ -135,16 +135,16 @@ class TaskManager {
     }
 }
 
-function myFun(){
-    var newTaskNameInput=document.getElementById('newTaskNameInput').value;
-    alert("Enter information please");
+// function myFun(){
+//     var newTaskNameInput=document.getElementById('newTaskNameInput').value;
+//     alert("Enter information please");
 
-    var newTaskDescription=document.getElementById('newTaskDescription').value;
-    alert("Enter information please");
+//     var newTaskDescription=document.getElementById('newTaskDescription').value;
+//     alert("Enter information please");
 
-    var newTaskAssignedTo=document.getElementById('newTaskAssignedTo').value;
-    alert("Enter information please");
+//     var newTaskAssignedTo=document.getElementById('newTaskAssignedTo').value;
+//     alert("Enter information please");
 
-    var newTaskDue=document.getElementById('newTaskDueDate').value;
-    alert("Enter information please");
-}
+//     var newTaskDue=document.getElementById('newTaskDueDate').value;
+//     alert("Enter information please");
+// }
