@@ -17,7 +17,7 @@ body {
 
 .my-5 {
     color:rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: 900;
     font-style: italic;
     font-size: 60px;
@@ -35,7 +35,7 @@ body {
 
 .h2-one {
     color:rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: 500;
     font-size: 26px;
     text-shadow: 2px 2px rgb(38, 38, 38);
@@ -44,7 +44,7 @@ body {
 
 .form-group {
     color:rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: 500;
     font-size: 18px;
     text-shadow: 1px 1px rgb(38, 38, 38);
@@ -87,7 +87,7 @@ body {
 
 .h2-two {
     color:rgb(255, 255, 255);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: 500;
     font-size: 30px;
     text-shadow: 2px 2px rgb(0, 0, 0);
@@ -97,7 +97,7 @@ body {
 .display-4 {
 /* h1 text "My Tasks" in jumbotron */
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 70px;
     font-weight: 800;
     font-style: bold;
@@ -297,7 +297,7 @@ assigned-plus-date {
     background-color: rgba(113, 113, 113, 0.2);
     background-image: -webkit-linear-gradient(left, rgba(223, 28, 28, 0.3) 20%, #ebc630 37.5%, #e48156, #b67a7f 62.5%, white 75%);
     background-image: linear-gradient(90deg, rgb(0, 0, 0) 25%, #e0c55c 37.5%, #e48b65, #ad7277 62.5%, rgb(0, 0, 0, 0.3) 75%);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: 400;
     font-size: 20px;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
