@@ -28,6 +28,35 @@
 <body>
 <header>
 
+<!-- fa-spin is the cheat code for spinnin'! -->
+<!-- fa-beat is the cheat code for beatin'! -->
+<!-- fa-bounce is the cheat code for bouncin'! -->
+<!-- fa-flip is the cheat code for flippin'! -->
+<!-- fa-shake is the cheat code for shakin'! -->
+
+
+
+<div class="header-bar">
+  <i id="music-icon" class="fa-solid fa-music"></i>
+  <button type="submit" class="btn-intro btn-intro-music">Song 1</button>
+  <i id="list-icon" class="fa-solid fa-list-check"></i>
+  <button type="submit" class="btn-intro btn-intro-create">#Create</button>
+  <i id="card-icon" class="fa-solid fa-address-card"></i>
+  <button type="submit" class="btn-intro btn-intro-tasks">#Tasks</button>
+  <i id="guitar-icon" class="fa-solid fa-guitar"></i>
+  <button type="submit" class="btn-intro btn-extro-music">Song 2</button>
+  <i id="fish-icon" style="--fa-animation-duration: 3s;" class="fa-solid fa-fish-fins"></i>
+  <button type="submit" class="btn-intro btn-extro-bottom">#Bottom</button>
+  <i id="heli-icon" style="--fa-animation-duration: 3s; --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 1;"" class="fa-solid fa-helicopter"></i>
+  <button type="submit" class="btn-intro btn-extro-top">#Top</button>
+  <i id="image-icon-1" style="--fa-animation-duration: 3s;" class="fa-regular fa-file-image"></i>
+  <i id="image-icon-2" style="--fa-animation-duration: 3s;" class="fa-regular fa-file-image"></i>
+  <i id="image-icon-3" style="--fa-animation-duration: 3s;" class="fa-regular fa-file-image"></i>
+</div>
+<br>
+<br>
+<br>
+
 </header>
 
 <div class="container">
@@ -97,6 +126,67 @@
   <!-- Local JavaScript -->
   <script src="js/taskManager.js"></script>
   <script src="js/index.js"></script>
+
+  <!-- Header Bar Icon Animations: Adds class on hover, tosses it into poverty when not! -->
+  <script>
+
+$(document).ready(function(){
+	$("#music-icon").hover(function(){
+		$(this).toggleClass("fa-flip");
+	});
+});
+
+$(document).ready(function(){
+	$("#list-icon").hover(function(){
+		$(this).toggleClass("fa-bounce");
+	});
+});
+
+$(document).ready(function(){
+	$("#card-icon").hover(function(){
+		$(this).toggleClass("fa-beat");
+	});
+});
+
+$(document).ready(function(){
+	$("#guitar-icon").hover(function(){
+		$(this).toggleClass("fa-spin");
+	});
+});
+
+$(document).ready(function(){
+	$("#fish-icon").hover(function(){
+		$(this).toggleClass("fa-shake");
+	});
+});
+
+$(document).ready(function(){
+	$("#heli-icon").hover(function(){
+		$(this).toggleClass("fa-bounce");
+	});
+});
+
+$(document).ready(function(){
+	$("#image-icon-1").hover(function(){
+		$(this).toggleClass("fa-shake");
+	});
+});
+
+$(document).ready(function(){
+	$("#image-icon-2").hover(function(){
+		$(this).toggleClass("fa-shake");
+	});
+});
+
+$(document).ready(function(){
+	$("#image-icon-3").hover(function(){
+		$(this).toggleClass("fa-shake");
+	});
+});
+
+</script>
+  </script>
+
 
 </body>
 
